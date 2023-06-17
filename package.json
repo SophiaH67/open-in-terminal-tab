@@ -1,5 +1,5 @@
 {
-  "name": "typescript-npm-cli-template",
+  "name": "open-in-terminal-tab",
   "version": "0.0.0-development",
   "description": "A template for creating npm CLI tools using TypeScript and VSCode",
   "files": [
@@ -24,11 +24,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ryansonshine/typescript-npm-cli-template.git"
+    "url": "git+https://github.com/ryansonshine/open-in-terminal-tab.git"
   },
   "license": "MIT",
   "author": {
-    "name": "Ryan Sonshine",
+    "name": "Marni",
     "email": "ryansonshine@users.noreply.github.com",
     "url": "https://github.com/ryansonshine"
   },
@@ -48,9 +48,9 @@
     "codecov"
   ],
   "bugs": {
-    "url": "https://github.com/ryansonshine/typescript-npm-cli-template/issues"
+    "url": "https://github.com/ryansonshine/open-in-terminal-tab/issues"
   },
-  "homepage": "https://github.com/ryansonshine/typescript-npm-cli-template#readme",
+  "homepage": "https://github.com/ryansonshine/open-in-terminal-tab#readme",
   "dependencies": {
     "commander": "^7.2.0"
   },
