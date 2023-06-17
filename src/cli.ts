@@ -2,7 +2,7 @@ import { Command } from 'commander';
 import { getCommand } from './getCommand';
 import spawn from 'cross-spawn';
 
-import packageJson from '../package.json';
+const packageJson = require('../package.json');
 const version: string = packageJson.version;
 
 const program = new Command();
@@ -12,7 +12,7 @@ program
   .name('open-in-terminal-tab')
   .description('Execute a given command in a new terminal tab')
   .arguments('<command>')
-  .option('-t, --title <title>', 'title of the new terminal tab', 'New Tab')
+  .option('-t, --title <title>', 'title of the new terminal tab', 'NewTab')
   .parse(process.argv);
 
 const options = program.opts();
@@ -23,11 +23,7 @@ const [command, ...args] = commandToRun;
 
 // Below is taken from cross-env
 // https://github.com/kentcdodds/cross-env/blob/3edefc7b450fe273655664f902fd03d9712177fe/src/index.js#L13-L36
-const proc = spawn(command, args, {
-  stdio: 'inherit',
-  shell: true,
-  env: process.env,
-});
+const proc = spawn(command, args);
 
 process.on('SIGTERM', () => proc.kill('SIGTERM'));
 process.on('SIGINT', () => proc.kill('SIGINT'));

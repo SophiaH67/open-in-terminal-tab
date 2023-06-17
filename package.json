@@ -1,6 +1,6 @@
 {
   "name": "open-in-terminal-tab",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Simple TS CLI package to execute a command in a new terminal tab",
   "files": [
     "!lib/__tests__/**/*",
@@ -16,7 +16,6 @@
     "cm": "cz",
     "lint": "eslint ./src/ --fix",
     "start": "TS_NODE_FILES=true ts-node ./src/cli.ts",
-    "prepare": "husky install",
     "semantic-release": "semantic-release",
     "test:watch": "jest --watch",
     "test": "jest",
@@ -48,9 +47,9 @@
     "codecov"
   ],
   "bugs": {
-    "url": "https://github.com/ryansonshine/open-in-terminal-tab/issues"
+    "url": "https://github.com/marnixah/open-in-terminal-tab/issues"
   },
-  "homepage": "https://github.com/ryansonshine/open-in-terminal-tab#readme",
+  "homepage": "https://github.com/marnixah/open-in-terminal-tab#readme",
   "dependencies": {
     "commander": "^7.2.0",
     "cross-spawn": "^7.0.3"

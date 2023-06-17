@@ -26,7 +26,7 @@ export function getCommand(
       '--',
       'bash',
       '-c',
-      `npx ${cmdString}`,
+      cmdString,
     ];
 
   if (process.env.GNOME_TERMINAL_SCREEN || process.env.GNOME_TERMINAL_SERVICE)
@@ -37,7 +37,7 @@ export function getCommand(
       '--',
       'bash',
       '-c',
-      `npx ${cmdString}`,
+      cmdString,
     ];
 
   if (returnCommandIfNoMatch) return cmd;
