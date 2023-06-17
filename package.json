@@ -1,6 +1,6 @@
 {
   "name": "open-in-terminal-tab",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Simple TS CLI package to execute a command in a new terminal tab",
   "files": [
     "!lib/__tests__/**/*",
@@ -8,7 +8,7 @@
     "bin/**/*"
   ],
   "bin": {
-    "my-command": "./bin/index.js"
+    "open-in-terminal-tab": "./bin/index.js"
   },
   "scripts": {
     "build": "tsc",
